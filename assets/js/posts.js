@@ -5,7 +5,7 @@ const POSTS = [
     title: "Your post title",
     category: "Somali",
     date: "2026-10-21",
-    content: "Write your Somali text here. Use &lt;br&gt; for a line break, or use plain text."
+    content: "Write your Somali text here. Use a newline for a line break, or use plain text."
   }
   */
 ];
