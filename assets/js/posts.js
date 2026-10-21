@@ -1,13 +1,23 @@
 /* Add published entries to POSTS. Use category: "Reading List", "Media", or "Somali". Home automatically shows every entry. */
 const POSTS = [
-  /* Example:
   {
-    title: "Your post title",
+    title: "Muhiimadda Akhriska",
     category: "Somali",
     date: "2026-10-21",
-    content: "Write your Somali text here. Use a newline for a line break, or use plain text."
+    content: "Akhrisku wuxuu kobciyaa aqoonta, fahamka iyo fikirka qofka."
+  },
+  {
+    title: "A Documentary Worth Watching",
+    category: "Media",
+    date: "2026-10-21",
+    content: "A documentary I enjoyed and recommend watching. This is a sample post to test the Media section."
+  },
+  {
+    title: "A Book to Read",
+    category: "Reading List",
+    date: "2026-10-21",
+    content: "A book I plan to read and share my thoughts about. This is a sample post to test the Reading List section."
   }
-  */
 ];
 (function () {
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
