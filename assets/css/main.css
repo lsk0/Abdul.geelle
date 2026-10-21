@@ -4687,3 +4687,45 @@ input, select, textarea {
 		}
 
 	}
+
+/* ==========================================
+   Abdul Geelle - Personal Brand
+   ========================================== */
+:root {
+    --ag-blue: #3289d4;
+    --ag-blue-light: #66b5ff;
+    --ag-navy: #1e252d;
+    --ag-white: #ffffff;
+}
+a:hover, a:focus { color: var(--ag-blue) !important; }
+#nav .links li.active a { background-color: var(--ag-blue); color: var(--ag-white) !important; }
+.button.primary, input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary {
+    background-color: var(--ag-blue); border-color: var(--ag-blue); color: var(--ag-white) !important;
+}
+.button.primary:hover { background-color: #226eb0 !important; border-color: #226eb0 !important; }
+.brand-mark { width: 88px; height: 88px; margin: 0 auto 1.5rem; color: var(--ag-white); }
+.brand-mark svg { display: block; width: 100%; height: 100%; }
+#header .ag-logo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 1.1rem 1.5rem; border: 0; color: var(--ag-white); text-decoration: none; line-height: 1.2; }
+#header .ag-logo .ag-symbol { display: block; width: 56px; height: 56px; }
+#header .ag-logo span { display: block; color: var(--ag-white); font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 1.2rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+#header .ag-logo:hover { color: var(--ag-blue-light) !important; }
+.eyebrow { display: block; margin-bottom: 1rem; color: var(--ag-blue); font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 0.8rem; font-weight: 900; letter-spacing: 0.16em; line-height: 1.5; text-transform: uppercase; }
+.personal-banner { display: flex; min-height: 260px; margin: 2rem 0; padding: 2rem; flex-direction: column; align-items: center; justify-content: center; gap: 0.65rem; overflow: hidden; background: radial-gradient(circle at 50% 30%, rgba(50, 137, 212, 0.25), transparent 60%), linear-gradient(135deg, #182433, #243c53); border: 1px solid rgba(102, 181, 255, 0.3); text-align: center; }
+.banner-monogram { color: var(--ag-white); font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: clamp(4rem, 12vw, 7rem); font-weight: 900; letter-spacing: -0.06em; line-height: 1; text-shadow: 0 0 35px rgba(50, 137, 212, 0.5); }
+.banner-name { color: var(--ag-white); font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: clamp(1.1rem, 4vw, 2rem); font-weight: 900; letter-spacing: 0.12em; line-height: 1.4; }
+.banner-caption { color: var(--ag-blue-light); font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 0.72rem; font-weight: 900; letter-spacing: 0.2em; }
+#nav .links a { transition: background-color 0.2s ease, color 0.2s ease; }
+#main > section.post, #main > article, #main > section { scroll-margin-top: 2rem; }
+#footer h3 { color: var(--ag-blue); }
+#copyright a { color: var(--ag-blue-light); }
+@media screen and (max-width: 736px) {
+    .brand-mark { width: 68px; height: 68px; }
+    #header .ag-logo { padding: 0.8rem 1rem; }
+    #header .ag-logo .ag-symbol { width: 44px; height: 44px; }
+    #header .ag-logo span { font-size: 1rem; }
+    .personal-banner { min-height: 210px; padding: 1.25rem; }
+    .banner-name { letter-spacing: 0.07em; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
