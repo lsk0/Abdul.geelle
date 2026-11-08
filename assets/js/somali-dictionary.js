@@ -55,8 +55,11 @@
       entries=await response.json();
       entries.forEach((e,i)=>e._id=i);
       renderAlphabet();
+      const params=new URLSearchParams(location.search);
+      const query=params.get("q") || "";
       const hash=decodeURIComponent(location.hash.slice(1));
-      if(hash){const found=entries.find(e=>fold(e.word)===fold(hash));if(found)showEntry(found);$("dict-search").value=hash;}
+      if(hash){const found=entries.find(e=>fold(e.word)===fold(hash));if(found)showEntry(found);}
+      $("dict-search").value=query || hash;
       renderResults($("dict-search").value);
     } catch(error) {
       status("The dictionary data could not be loaded. Please refresh the page or try again later.");
