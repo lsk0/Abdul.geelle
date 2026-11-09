@@ -1,31 +1,38 @@
 # Abdul Geelle — Personal Website
 
-Welcome to the source code for my personal website.
+Static site (HTML, CSS, JavaScript) published with GitHub Pages, plus login and a community feed powered by Supabase.
 
-## About
-This website is my personal space for sharing my interests, projects, updates, and journey.
+## Pages
+- index.html       Home (hero, word of the day, latest posts, contact)
+- about.html       About
+- projects.html, coaching.html, students.html   "Coming soon" pages
+- blog.html        Blog with Reading List / Media / Somali filters
+- qaamuus.html     Qaamuus: searchable Somali dictionary
+- login.html       Sign in / Create account / Reset password
+- community.html   Community feed (anyone reads, members post)
+- new-post.html    Owner helper that writes a blog post entry for you to paste
+- somali.html, generic.html, media.html, elements.html   Old addresses that redirect
 
-## Technology
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
+## Setup (one time)
+1. In Supabase, run supabase-setup.sql in the SQL Editor.
+2. Put your Project URL and anon key in assets/js/config.js
+3. Follow the step-by-step guide.
 
-## Project Structure
-- `index.html` — Homepage and personal portfolio
-- `generic.html` — About page
-- `elements.html` — Original template element reference; not linked from navigation
-- `assets/css/main.css` — Website styling and brand customization
-- `assets/js/` — Existing template scripts
-- `images/favicon.svg` — Abdul Geelle AG browser icon
-- `.github/workflows/static.yml` — GitHub Pages deployment workflow
+## Adding a blog post
+Open new-post.html on your site, fill it in, copy the result, and paste it into assets/js/posts.js on GitHub.
 
-## Local Preview
-Open `index.html` in a browser to preview the website. The site uses static HTML, CSS, and JavaScript; no build process is required.
+## Files
+- assets/css/site.css            Design
+- assets/js/site.js              Somali/English switch, menu, header sign-in state
+- assets/js/posts.js             Blog posts
+- assets/js/qaamuus.js           Dictionary search
+- assets/js/wotd.js              Word of the day and random word
+- assets/js/login.js, community.js   Login and community (Supabase)
+- assets/js/config.js            YOUR Supabase URL and anon key
+- assets/js/vendor/supabase.js   Supabase client library (MIT license in SUPABASE-LICENSE.txt)
+- assets/data/qaamuus.json       Dictionary entries (already in your repo)
+- assets/data/wotd.json          1,500 words for word of the day / random word
+- supabase-setup.sql             Database setup (run in Supabase, not needed on the website)
 
-## Credits and License
-This website is based on the Massively template by HTML5 UP.
-Original template: https://html5up.net/massively
-Template license: https://html5up.net/license
-
-The original `LICENSE.txt` file is retained. Third-party libraries and assets remain subject to their respective licenses. Personal branding and site content are customized for Abdul Geelle.
+## Credits
+The earlier version of this site was based on Massively by HTML5 UP (https://html5up.net/massively). The original LICENSE.txt is retained.

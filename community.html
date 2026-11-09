@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community | Abdul Geelle</title>
+<meta name="ag-title-en" content="Community | Abdul Geelle">
+<meta name="ag-title-so" content="Bulshada | Abdul Geelle">
+<meta name="description" content="Join the Abdul Geelle community: read posts and share your own.">
+<meta name="theme-color" content="#1767a7">
+<meta property="og:title" content="Community | Abdul Geelle">
+<meta property="og:description" content="Join the Abdul Geelle community: read posts and share your own.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="site-header">
+<div class="wrap bar">
+<a class="brand" href="index.html" aria-label="Abdul Geelle"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M12 76 L42 17 L70 76 M24 53 L60 70" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="square" stroke-linejoin="round"/><path d="M80 35 H63 Q54 35 54 45 V58 Q54 68 65 68 H82 V52 H70" fill="none" stroke="#3289d4" stroke-width="8" stroke-linecap="square" stroke-linejoin="round"/></svg><span>Abdul Geelle</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-so-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<div class="nav-panel" id="site-nav">
+<nav class="tabs" aria-label="Main" data-so-label="Muuqaalka ugu weyn"><a href="about.html" data-so="Ku saabsan">About</a><a href="projects.html" data-so="Mashaariic">Projects</a><a href="coaching.html" data-so="Tababar">Coaching</a><a href="students.html" data-so="Arday">Students</a><a href="blog.html" data-so="Qoraallo">Blog</a><a href="qaamuus.html" data-so="Qaamuus">Qaamuus</a></nav>
+<div class="actions">
+<button class="icon-btn" type="button" aria-label="Recent" data-so-label="Dhawaan" title="Soon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></button>
+<a class="btn ghost" href="community.html" data-so="Bulshada">Community</a>
+<a class="btn ghost" id="nav-signin" href="login.html" data-so="Gal">Sign in</a>
+<a class="btn primary" id="nav-start" href="login.html?mode=signup" data-so="Bilow bilaash">Start free</a>
+<button class="lang-toggle" type="button" aria-label="Switch website language" data-so-label="Bedel luqadda website-ka"></button>
+</div></div></div></header>
+<main>
+<section class="page-hero"><div class="wrap">
+<span class="eyebrow" data-so="BULSHADA">COMMUNITY</span>
+<h1 data-so="Bulshada">Community</h1>
+<p class="lead" data-so="Qof kasta wuu akhrin karaa. Xubnaha gashay ayaa qoraal dhigi kara.">Anyone can read. Members who are signed in can post.</p>
+</div></section>
+<section class="section" style="padding-top:12px"><div class="wrap prose" style="max-width:760px" id="c-main">
+<div id="c-signin" class="notice" hidden><h3 data-so="Gal si aad qoraal u dhigto">Sign in to post</h3>
+<p style="margin:0 0 .8rem" data-so="Akoon bilaash ah ayaa kuu ogolaanaya inaad qoraal dhigto.">A free account lets you write posts and join the conversation.</p>
+<div class="actions-row" style="margin-top:0"><a class="btn primary" href="login.html" data-so="Gal">Sign in</a><a class="btn" href="login.html?mode=signup" data-so="Samee akoon">Create account</a></div></div>
+<div id="c-composer" class="composer card" hidden>
+<div class="who-bar"><span><span class="muted" data-so="Waxaad u dhigaysaa sidii">Posting as</span> <strong id="c-who"></strong></span><button type="button" class="link-btn" id="c-signout" data-so="Ka bax">Sign out</button></div>
+<form id="c-form"><div class="field" style="margin-bottom:.6rem"><label for="c-text" class="sr-only" data-so="Qoraalkaaga">Your post</label>
+<textarea id="c-text" maxlength="1000" placeholder="Share something with the community…" data-so-ph="La wadaag bulshada wax…"></textarea></div>
+<div class="row-end"><span class="muted" id="c-count">0 / 1000</span><button class="btn primary" type="submit" id="c-send" data-so="Dhig">Post</button></div></form></div>
+<p class="msg" id="c-msg" role="alert" aria-live="polite"></p>
+<div class="who-bar"><h2 style="font-size:1.3rem;margin:0" data-so="Qoraallada ugu dambeeyay">Latest posts</h2><button type="button" class="link-btn" id="c-refresh" data-so="Cusboonaysii">Refresh</button></div>
+<div class="feed" id="c-feed"><p class="empty">Loading…</p></div>
+<button type="button" class="btn more" id="c-more" hidden data-so="Muuji wax dheeraad ah">Show more</button>
+<p class="muted" style="margin-top:1.4rem" data-so="Fadlan ixtiraam. Qoraallada waa dadweyne. Isticmaal badhanka &quot;Soo sheeg&quot; haddii aad aragto wax aan habboonayn.">Please be respectful. Posts are public. Use Report if you see something that doesn't belong.</p>
+</div>
+<div class="wrap" id="c-setup" hidden><div class="notice"><h3 data-so="Weli lama dhammaystirin dejinta">Setup not finished yet</h3>
+<p data-so="Bulshada waxay u baahan tahay xiriirka Supabase. Fur <code>assets/js/config.js</code> oo ku dar Project URL iyo furaha anon.">The community needs your Supabase connection. Open <code>assets/js/config.js</code> and add your Project URL and anon key.</p></div></div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot">
+<section><h3>Abdul Geelle</h3><p data-so="Waad ku mahadsan tahay booqashada boggayga. Cusboonaysiin iyo mashaariic cusub ayaa iman doona.">Thank you for visiting my personal website. More updates and projects will be added over time.</p></section>
+<section><h3 data-so="Boggag">Pages</h3><ul><li><a href="about.html" data-so="Ku saabsan">About</a></li><li><a href="projects.html" data-so="Mashaariic">Projects</a></li><li><a href="coaching.html" data-so="Tababar">Coaching</a></li><li><a href="students.html" data-so="Arday">Students</a></li><li><a href="blog.html" data-so="Qoraallo">Blog</a></li><li><a href="qaamuus.html" data-so="Qaamuus">Qaamuus</a></li><li><a href="community.html" data-so="Bulshada">Community</a></li></ul></section>
+<section><h3>X</h3><ul><li><a href="https://x.com/halyay" target="_blank" rel="noopener noreferrer"><svg width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-.125em"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-7.4L5.5 22H2.4l7.3-8.4L1.8 2h6.5l4.4 6.9L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"/></svg> @halyay</a></li></ul></section>
+</div>
+<div class="copy">&copy; <span id="copyright-year">2026</span> Abdul Geelle</div>
+</div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/vendor/supabase.js"></script>
+<script src="assets/js/community.js"></script>
+</body>
+</html>
